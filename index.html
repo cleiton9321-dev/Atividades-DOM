@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividades de DOM - JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Atividades de DOM — JavaScript</h1>
+      <p>15 atividades para praticar manipulação do DOM.</p>
+    </header>
+
+    <main>
+      <!-- ATIVIDADE 1 -->
+      <section class="atividade">
+        <h2>Atividade 1 — Saudação</h2>
+        <span class="nivel facil">Fácil</span>
+        <div class="area">
+          <input type="text" id="nome01" placeholder="Digite seu nome" />
+          <button id="btn01">Enviar</button>
+        </div>
+        <p class="resultado" id="resultado01"></p>
+      </section>
+
+      <!-- ATIVIDADE 2 -->
+      <section class="atividade">
+        <h2>Atividade 2 — Alterando o título</h2>
+        <span class="nivel facil">Fácil</span>
+        <h1 id="titulo02">Curso de Desenvolvimento de Sistemas</h1>
+        <button id="btn02">Alterar título</button>
+      </section>
+
+      <!-- ATIVIDADE 3 -->
+      <section class="atividade">
+        <h2>Atividade 3 — Contador de cliques</h2>
+        <span class="nivel facil">Fácil</span>
+        <button id="btn03">+ Clique aqui</button>
+        <p class="contador" id="contador03">Cliques: 0</p>
+      </section>
+
+      <!-- ATIVIDADE 4 -->
+      <section class="atividade">
+        <h2>Atividade 4 — Alterando uma mensagem</h2>
+        <span class="nivel facil">Fácil</span>
+        <p class="resultado" id="status04">Status: Atendimento fechado</p>
+        <button id="btn04">Abrir atendimento</button>
+      </section>
+
+      <!-- ATIVIDADE 5 -->
+      <section class="atividade">
+        <h2>Atividade 5 — Calculadora simples</h2>
+        <span class="nivel facil">Fácil</span>
+        <div class="area">
+          <input type="text" id="produto05" placeholder="Produto" />
+          <input type="number" id="quantidade05" placeholder="Quantidade" />
+          <input type="number" id="preco05" placeholder="Preço" step="0.01" />
+          <button id="btn05">Calcular</button>
+        </div>
+        <p class="resultado" id="resultado05"></p>
+      </section>
+
+      <!-- ATIVIDADE 6 -->
+      <section class="atividade">
+        <h2>Atividade 6 — Sistema de notas</h2>
+        <span class="nivel medio">Médio</span>
+        <div class="area">
+          <input type="number" id="nota01_06" placeholder="Nota 1" step="0.1" />
+          <input type="number" id="nota02_06" placeholder="Nota 2" step="0.1" />
+          <input type="number" id="nota03_06" placeholder="Nota 3" step="0.1" />
+          <button id="btn06">Calcular média</button>
+        </div>
+        <p class="resultado" id="resultado06"></p>
+      </section>
+
+      <!-- ATIVIDADE 7 -->
+      <section class="atividade">
+        <h2>Atividade 7 — Validação de formulário</h2>
+        <span class="nivel medio">Médio</span>
+        <div class="area vertical">
+          <input type="text" id="nome07" placeholder="Nome" />
+          <input type="email" id="email07" placeholder="E-mail" />
+          <input type="password" id="senha07" placeholder="Senha" />
+          <button id="btn07">Cadastrar</button>
+        </div>
+        <p class="resultado" id="resultado07"></p>
+      </section>
+
+      <!-- ATIVIDADE 8 -->
+      <section class="atividade">
+        <h2>Atividade 8 — Sistema de estoque</h2>
+        <span class="nivel medio">Médio</span>
+        <div class="area">
+          <input type="text" id="produto08" placeholder="Produto" />
+          <input
+            type="number"
+            id="disponivel08"
+            placeholder="Quantidade disponível"
+          />
+          <input
+            type="number"
+            id="solicitada08"
+            placeholder="Quantidade solicitada"
+          />
+          <button id="btn08">Verificar</button>
+        </div>
+        <p class="resultado" id="resultado08"></p>
+      </section>
+
+      <!-- ATIVIDADE 9 -->
+      <section class="atividade">
+        <h2>Atividade 9 — Lista de tarefas</h2>
+        <span class="nivel medio">Médio</span>
+        <div class="area">
+          <input type="text" id="tarefa09" placeholder="Digite uma tarefa" />
+          <button id="btn09">Adicionar</button>
+        </div>
+        <h3>Minhas tarefas</h3>
+        <ul id="lista09"></ul>
+      </section>
+
+      <!-- ATIVIDADE 10 -->
+      <section class="atividade">
+        <h2>Atividade 10 — Calculadora de desconto</h2>
+        <span class="nivel medio">Médio</span>
+        <div class="area">
+          <input type="text" id="produto10" placeholder="Produto" />
+          <input type="number" id="preco10" placeholder="Preço" step="0.01" />
+          <input
+            type="number"
+            id="desconto10"
+            placeholder="Desconto %"
+            min="0"
+            max="100"
+          />
+          <button id="btn10">Calcular</button>
+        </div>
+        <p class="resultado" id="resultado10"></p>
+      </section>
+
+      <!-- ATIVIDADE 11 -->
+      <section class="atividade">
+        <h2>Atividade 11 — Sistema de login</h2>
+        <span class="nivel dificil">Difícil</span>
+        <div id="formulario11" class="area vertical">
+          <input type="text" id="usuario11" placeholder="Usuário" />
+          <input type="password" id="senha11" placeholder="Senha" />
+          <button id="btn11">Entrar</button>
+        </div>
+        <p class="resultado" id="resultado11"></p>
+        <div id="areaLogada11" class="resultado oculto">
+          Bem-vindo ao sistema acadêmico!
+        </div>
+      </section>
+
+      <!-- ATIVIDADE 12 -->
+      <section class="atividade">
+        <h2>Atividade 12 — Carrinho de compras</h2>
+        <span class="nivel dificil">Difícil</span>
+
+        <div class="produtos">
+          <article class="produto12">
+            <h3>Notebook</h3>
+            <p>R$ 3.500</p>
+            <button
+              class="btnAdicionar12"
+              data-produto="Notebook"
+              data-preco="3500"
+            >
+              Adicionar
+            </button>
+          </article>
+
+          <article class="produto">
+            <h3>Mouse</h3>
+            <p>R$ 80</p>
+            <button class="btnAdicionar12" data-produto="Mouse" data-preco="80">
+              Adicionar
+            </button>
+          </article>
+
+          <article class="produto">
+            <h3>Teclado</h3>
+            <p>R$ 150</p>
+            <button
+              class="btnAdicionar12"
+              data-produto="Teclado"
+              data-preco="150"
+            >
+              Adicionar
+            </button>
+          </article>
+        </div>
+
+        <h3>Carrinho</h3>
+        <ul id="carrinho12"></ul>
+
+        <div class="stats">
+          <div class="stat">
+            Quantidade de produtos<strong id="quantidade12">0</strong>
+          </div>
+          <div class="stat">
+            Total da compra<strong id="total12">R$ 0,00</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- ATIVIDADE 13 -->
+      <section class="atividade">
+        <h2>Atividade 13 — Sistema de cadastro de alunos</h2>
+        <span class="nivel dificil">Difícil</span>
+
+        <div class="area">
+          <input type="text" id="nome13" placeholder="Nome" />
+          <input type="number" id="idade13" placeholder="Idade" />
+          <input type="text" id="curso13" placeholder="Curso" />
+          <button id="btn13">Cadastrar</button>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Curso</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="tabela13"></tbody>
+        </table>
+      </section>
+
+      <!-- ATIVIDADE 14 -->
+      <section class="atividade">
+        <h2>Atividade 14 — Dashboard de vendas</h2>
+        <span class="nivel dificil">Difícil</span>
+
+        <div class="area">
+          <input type="text" id="produto14" placeholder="Produto" />
+          <input type="number" id="quantidade14" placeholder="Quantidade" />
+          <input
+            type="number"
+            id="valor14"
+            placeholder="Valor unitário"
+            step="0.01"
+          />
+          <button id="btn14">Adicionar venda</button>
+        </div>
+
+        <div class="area">
+          <input type="text" id="pesquisa14" placeholder="Pesquisar produto" />
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            Faturamento<strong id="faturamento14">R$ 0,00</strong>
+          </div>
+          <div class="stat">Itens vendidos<strong id="itens14">0</strong></div>
+          <div class="stat">
+            Vendas realizadas<strong id="vendas14">0</strong>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Quantidade</th>
+              <th>Valor unitário</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="tabela14"></tbody>
+        </table>
+      </section>
+
+      <!-- ATIVIDADE 15 -->
+      <section class="atividade">
+        <h2>Atividade 15 — Mini sistema acadêmico</h2>
+        <span class="nivel dificil">Difícil</span>
+
+        <div class="area">
+          <input type="text" id="nome15" placeholder="Nome" />
+          <input type="text" id="ra15" placeholder="RA" />
+          <input type="text" id="curso15" placeholder="Curso" />
+          <input type="number" id="nota01_15" placeholder="Nota 1" step="0.1" />
+          <input type="number" id="nota02_15" placeholder="Nota 2" step="0.1" />
+          <button id="btn15">Cadastrar</button>
+        </div>
+
+        <div class="stats">
+          <div class="stat">Alunos<strong id="contadorAlunos15">0</strong></div>
+          <div class="stat">
+            Aprovados<strong id="contadorAprovados15">0</strong>
+          </div>
+          <div class="stat">
+            Reprovados<strong id="contadorReprovados15">0</strong>
+          </div>
+        </div>
+
+        <div class="area">
+          <input type="text" id="pesquisa15" placeholder="Pesquisar aluno" />
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>RA</th>
+              <th>Curso</th>
+              <th>Média</th>
+              <th>Situação</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody id="tabela15"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
